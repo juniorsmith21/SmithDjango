@@ -1,10 +1,10 @@
-from rest_framework.viewsets import ModelViewset
+from rest_framework.viewsets import ModelViewSet
 from users.api.serializers import UserSerializer
 from users.models import User
 
 
 
 
-class userApiViewset(ModelViewset):
+class userApiViewset(ModelViewSet):
     serializers_class=UserSerializer
     queryset= User.objects.all()
