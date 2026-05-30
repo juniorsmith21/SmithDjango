@@ -1,7 +1,7 @@
 Proyecto desarrollado en Django para la gestión de equipos.
 
 Requisitos
-Python 3.x
+Python
 Django
 
 Django REST Framework

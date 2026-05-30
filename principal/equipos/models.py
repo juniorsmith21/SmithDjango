@@ -18,7 +18,7 @@ class Equipo(models.Model):
     tipo                    =models.CharField(max_length=50, choices=TIPO_CHOICES)
     descripcion             =models.TextField(blank=True)
     ubicacion               =models.CharField(max_length=200)
-    fecha_de_anquisicion    =models.DateField()
+    fecha_adquisicion    =models.DateField()
     activo                  =models.BooleanField(default=True)
 
 
