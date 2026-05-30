@@ -6,5 +6,5 @@ from users.models import User
 
 
 class userApiViewset(ModelViewSet):
-    serializers_class=UserSerializer
+    serializer_class=UserSerializer
     queryset= User.objects.all()
