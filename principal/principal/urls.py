@@ -24,6 +24,7 @@ from drf_yasg import openapi
 
 #rutas de usuarios
 from users.api.router import routers_users
+from equipos.api.router import router_equipos
 
 schema_view = get_schema_view(
    openapi.Info(
@@ -44,4 +45,5 @@ urlpatterns = [
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     path('api/',  include(routers_users.urls)), 
+    path('api/',     include(router_equipos.urls)),
 ]
